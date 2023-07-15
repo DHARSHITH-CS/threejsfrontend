@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adding 3D Model</title>
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+          }
+          
+          #animation-list {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+          }
+          #file-input {
+            position: absolute;
+            top: 600px;
+            left: 10px;
+            z-index: 1;
+
+          }
+          
+          canvas.webgl {
+            position: relative;
+            z-index: 0;
+          }
+          canvas {
+            background-color: blue;
+          }
+          
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="animation-list">
+          </div>
+        <canvas class="webgl" id="myCanvas"></canvas>
+        <input type="file" id="file-input" accept=".glb">
+      </div>
+      
+      
+</body>
+</html>
